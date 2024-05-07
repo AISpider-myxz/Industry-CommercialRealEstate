@@ -10,4 +10,4 @@ os.chdir(current_dir)# 跳转到当前文件所在目录
 
 # execute(['celery','-A','celery_app','worker','-l','info','-n','celery@get_detial'])
 # execute(['celery -A celery_app worker -l info -n celery@get_detial'])
-execute(['scrapy', 'crawl', 'demo2'])
+execute(['scrapy', 'crawl', 'commercialrealestate','-a','category=for-lease'])
