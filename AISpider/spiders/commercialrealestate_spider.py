@@ -181,7 +181,7 @@ class CommercialrealestateSpider(scrapy.Spider):
         session.headers.clear()
         session.headers.update(self.headers)
         resp = session.get(url=self.start_urls[5],)
-        self.cookies = resp.cookies.get_dict()
+        # self.cookies = resp.cookies.get_dict()
         # 请求接口拿id
         for i in range(page_num+1):
             if i == 0:continue
